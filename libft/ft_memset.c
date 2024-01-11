@@ -6,10 +6,10 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 16:06:35 by aggrigor          #+#    #+#             */
-/*   Updated: 2023/11/28 17:54:50 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 15:03:02 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)
 {

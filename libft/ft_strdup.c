@@ -6,11 +6,10 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 13:46:06 by aggrigor          #+#    #+#             */
-/*   Updated: 2023/12/17 21:03:14 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 15:20:10 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_strdup(const char *s)
 {

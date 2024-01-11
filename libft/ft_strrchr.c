@@ -6,10 +6,10 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 13:35:51 by aggrigor          #+#    #+#             */
-/*   Updated: 2023/12/01 13:44:31 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 15:24:35 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {

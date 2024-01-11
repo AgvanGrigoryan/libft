@@ -6,10 +6,10 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/06 10:27:17 by aggrigor          #+#    #+#             */
-/*   Updated: 2023/12/17 13:43:25 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 15:00:36 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

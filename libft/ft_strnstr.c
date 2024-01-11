@@ -6,10 +6,10 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 12:12:50 by aggrigor          #+#    #+#             */
-/*   Updated: 2023/12/05 16:47:38 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 15:24:07 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

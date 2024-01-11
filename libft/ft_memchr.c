@@ -6,10 +6,10 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/02 18:38:35 by aggrigor          #+#    #+#             */
-/*   Updated: 2023/12/02 22:32:40 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 15:01:54 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

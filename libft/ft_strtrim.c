@@ -6,11 +6,10 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 15:01:35 by aggrigor          #+#    #+#             */
-/*   Updated: 2023/12/22 14:11:32 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 15:25:14 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
-#include <stdlib.h>
+#include "libft.h"
 
 static int	is_in_set(char const *set, char chr)
 {
@@ -21,18 +20,6 @@ static int	is_in_set(char const *set, char chr)
 	if (*set != '\0')
 		return (1);
 	return (0);
-}
-
-static size_t	ft_strlen(char const *str)
-{
-	size_t	len;
-
-	if (str == NULL)
-		return (0);
-	len = 0;
-	while (str[len])
-		len++;
-	return (len);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)

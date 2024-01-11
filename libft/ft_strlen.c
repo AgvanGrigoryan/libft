@@ -6,17 +6,17 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 15:58:15 by aggrigor          #+#    #+#             */
-/*   Updated: 2023/11/28 16:03:10 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 15:23:18 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {
 	size_t	len;
 
 	len = 0;
-	while (*s && ++len)
-		s++;
+	while (s[len])
+		len++;
 	return (len);
 }

@@ -6,24 +6,10 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 17:48:26 by aggrigor          #+#    #+#             */
-/*   Updated: 2023/12/18 19:13:00 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 15:40:39 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
-#include <stddef.h>
-#include <stdio.h>
-
-static size_t	ft_strlen(const char *s)
-{
-	size_t	len;
-
-	len = 0;
-	if (s == NULL)
-		return (0);
-	while (*s && s[len])
-		len++;
-	return (len);
-}
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -34,8 +20,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
-	printf("STR1:%lu\n", s1_len);
-	printf("STR2:%lu\n", s2_len);
 	joined_str = (char *)malloc(s1_len + s2_len + 1);
 	if (joined_str == NULL)
 		return (NULL);

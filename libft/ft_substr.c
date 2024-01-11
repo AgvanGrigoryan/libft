@@ -6,11 +6,10 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 21:05:11 by aggrigor          #+#    #+#             */
-/*   Updated: 2023/12/18 16:37:51 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 15:25:31 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

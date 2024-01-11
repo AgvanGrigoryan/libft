@@ -6,10 +6,9 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 13:14:12 by aggrigor          #+#    #+#             */
-/*   Updated: 2023/12/22 16:12:14 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 15:16:56 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
 #include "libft.h"
 
 static size_t	count_words(char const *s, char sep)

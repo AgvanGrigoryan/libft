@@ -6,10 +6,9 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/24 20:40:49 by aggrigor          #+#    #+#             */
-/*   Updated: 2023/12/24 21:21:31 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 15:23:29 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))

@@ -6,10 +6,10 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 19:02:36 by aggrigor          #+#    #+#             */
-/*   Updated: 2023/11/29 12:57:51 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 15:02:32 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

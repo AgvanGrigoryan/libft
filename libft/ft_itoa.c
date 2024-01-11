@@ -6,10 +6,10 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/22 16:56:39 by aggrigor          #+#    #+#             */
-/*   Updated: 2023/12/24 20:35:46 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 15:01:35 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
+#include "libft.h"
 
 size_t	count_num_len(long long int k)
 {
