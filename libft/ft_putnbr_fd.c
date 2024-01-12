@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/24 20:40:49 by aggrigor          #+#    #+#             */
-/*   Updated: 2024/01/11 21:38:25 by aggrigor         ###   ########.fr       */
+/*   Created: 2024/01/11 21:48:51 by aggrigor          #+#    #+#             */
+/*   Updated: 2024/01/11 21:52:18 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+void	ft_putnbr_fd(int n, int fd)
 {
-	size_t	i;
-	size_t	s_len;
-	char	*new_str;
-
-	if (s == NULL)
-		return (NULL);
-	s_len = ft_strlen(s);
-	new_str = (char *)malloc((s_len + 1) * sizeof(char));
-	if (new_str == NULL)
-		return (NULL);
-	i = 0;
-	while (i < s_len)
+	if (n == INT_MIN)
 	{
-		new_str[i] = (*f)(i, s[i]);
-		i++;
+		ft_putnbr_fd(n / 10, fd);
+		n = -(n % 10);
 	}
-	new_str[i] = '\0';
-	return (new_str);
+	if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		n = -n;
+	}
+	if (n > 9)
+	{
+		ft_putnbr_fd(n / 10, fd);
+		ft_putchar_fd('0' + (n % 10), fd);
+	}
+	else
+		ft_putchar_fd('0' + n, fd);
 }

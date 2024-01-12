@@ -6,7 +6,7 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 15:01:35 by aggrigor          #+#    #+#             */
-/*   Updated: 2024/01/11 15:25:14 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 21:19:57 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -24,12 +24,12 @@ static int	is_in_set(char const *set, char chr)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	unsigned int	str_l;
-	unsigned int	str_r;
-	unsigned int	i;
-	char			*trimmed_str;
+	int		str_l;
+	int		str_r;
+	int		i;
+	char	*trimmed_str;
 
-	if (s1 == NULL)
+	if (!s1)
 		return (NULL);
 	str_l = 0;
 	str_r = ft_strlen(s1) - 1;

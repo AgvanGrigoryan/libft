@@ -6,7 +6,7 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 17:48:26 by aggrigor          #+#    #+#             */
-/*   Updated: 2024/01/11 15:40:39 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 20:01:04 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -18,6 +18,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*joined_str;
 	char	*str_ptr;
 
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
 	joined_str = (char *)malloc(s1_len + s2_len + 1);

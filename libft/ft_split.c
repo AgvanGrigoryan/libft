@@ -6,7 +6,7 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 13:14:12 by aggrigor          #+#    #+#             */
-/*   Updated: 2024/01/11 15:16:56 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 21:23:17 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -71,6 +71,8 @@ char	**ft_split(char const *s, char c)
 	size_t		words_count;
 	char		**words;
 
+	if (s == NULL)
+		return (NULL);
 	words_count = count_words(s, c);
 	words = (char **)malloc((words_count + 1) * sizeof(char *));
 	if (words == NULL)

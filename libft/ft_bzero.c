@@ -6,16 +6,13 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 18:33:33 by aggrigor          #+#    #+#             */
-/*   Updated: 2024/01/11 15:00:21 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/12 13:08:47 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*s_ptr;
-
-	s_ptr = (char *)s;
 	while (n--)
-		s_ptr[n] = 0;
+		((char *)s)[n] = 0;
 }

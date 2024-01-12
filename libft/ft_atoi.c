@@ -6,9 +6,16 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 16:55:12 by aggrigor          #+#    #+#             */
-/*   Updated: 2023/12/06 00:36:16 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 19:06:15 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
+
+static	int	ft_isspace(char c)
+{
+	return (c == ' ' || c == '\t' || c == '\n'
+		|| c == '\v' || c == '\f' || c == '\r');
+}
 
 int	ft_atoi(const char *nptr)
 {
@@ -17,7 +24,7 @@ int	ft_atoi(const char *nptr)
 
 	sign = 1;
 	num = 0;
-	while (*nptr == ' ')
+	while (ft_isspace(*nptr))
 		nptr++;
 	if (*nptr == '-')
 	{

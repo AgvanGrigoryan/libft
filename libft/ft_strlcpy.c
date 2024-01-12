@@ -6,7 +6,7 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 14:12:26 by aggrigor          #+#    #+#             */
-/*   Updated: 2024/01/11 14:54:43 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 18:41:44 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -25,6 +25,6 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 		dest[i] = src[i];
 		i++;
 	}
-	*dest = '\0';
+	dest[i] = '\0';
 	return (src_len);
 }

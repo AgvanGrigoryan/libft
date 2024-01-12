@@ -6,7 +6,7 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 19:18:54 by aggrigor          #+#    #+#             */
-/*   Updated: 2024/01/11 15:22:14 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/01/11 18:34:27 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -17,6 +17,8 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	size_t	src_len;
 	size_t	i;
 
+	if (!dest && size == 0)
+		return (0);
 	dest_len = 0;
 	while (dest[dest_len] != '\0' && dest_len < size)
 		dest_len++;
