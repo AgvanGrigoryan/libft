@@ -1,27 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/06 10:27:17 by aggrigor          #+#    #+#             */
-/*   Updated: 2024/01/17 19:06:22 by aggrigor         ###   ########.fr       */
+/*   Created: 2024/01/12 14:45:59 by aggrigor          #+#    #+#             */
+/*   Updated: 2024/01/12 19:41:07 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#define UINT_MAX_SQRT 65536
 
-void	*ft_calloc(size_t nmemb, size_t size)
+int	ft_lstsize(t_list *lst)
 {
-	void	*mem;
+	int	lst_size;
 
-	if ((nmemb > UINT_MAX_SQRT && size != 0)
-		|| (size > UINT_MAX_SQRT && nmemb != 0))
-		return (NULL);
-	mem = (void *)malloc(nmemb * size);
-	if (mem == NULL)
-		return (NULL);
-	ft_bzero(mem, nmemb * size);
-	return (mem);
+	lst_size = 0;
+	while (lst)
+	{
+		lst_size++;
+		lst = lst->next;
+	}
+	return (lst_size);
 }
