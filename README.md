@@ -1,4 +1,4 @@
-<img width="2048" alt="image" src="https://github.com/AgvanGrigoryan/libft/assets/101641443/9e5d2d54-8eeb-4a54-87b1-1524596d1121">
+<img width="202" alt="image" src="https://github.com/AgvanGrigoryan/libft/assets/101641443/bbfd70f1-4d10-4b37-8b4b-dc035ba72512">
 
 # Done 125%
 ## Tested with 3testers:
