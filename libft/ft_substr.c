@@ -6,17 +6,10 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 21:05:11 by aggrigor          #+#    #+#             */
-/*   Updated: 2024/01/11 19:58:17 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/03/11 13:34:39 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-
-static unsigned int	ft_min(unsigned int num1, unsigned int num2)
-{
-	if (num1 < num2)
-		return (num1);
-	return (num2);
-}
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -29,8 +22,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	s_len = ft_strlen(s);
 	if (s_len < start)
 		substr_len = 0;
+	else if (s_len < len)
+		substr_len = s_len;
 	else
-		substr_len = ft_min(s_len, len);
+		substr_len = len;
 	substr = (char *)malloc(substr_len + 1);
 	if (substr == NULL)
 		return (NULL);
