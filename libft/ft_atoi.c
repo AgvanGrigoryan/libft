@@ -6,7 +6,7 @@
 /*   By: aggrigor <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 16:55:12 by aggrigor          #+#    #+#             */
-/*   Updated: 2024/01/11 19:06:15 by aggrigor         ###   ########.fr       */
+/*   Updated: 2024/03/31 16:53:18 by aggrigor         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -26,13 +26,10 @@ int	ft_atoi(const char *nptr)
 	num = 0;
 	while (ft_isspace(*nptr))
 		nptr++;
+	if (*nptr == '-' || *nptr == '+')
+		nptr++;
 	if (*nptr == '-')
-	{
 		sign *= -1;
-		nptr++;
-	}
-	else if (*nptr == '+')
-		nptr++;
 	while ('0' <= *nptr && *nptr <= '9')
 	{
 		num *= 10;
